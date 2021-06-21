@@ -6,10 +6,10 @@ def  call(){
 		stages {
 			stage('wtrt') {
 				steps {
-				    script{
+				   
 				      				demoFunc.abc()
   
-				    }
+				  
 				}
 			}
 			stage('dwetwtef') {
