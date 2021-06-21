@@ -2,6 +2,10 @@
 
 def call(){
 	abc()
+	
+}
+
+def abc(){
 	pipeline {
 		agent any
 
@@ -23,10 +27,6 @@ def call(){
 			}
 		}
 	}
-}
-
-def abc(){
-	return 100
 }
 
 
