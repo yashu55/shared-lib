@@ -14,7 +14,7 @@ def call(){
 			}
 			stage('dwetwtef') {
 				steps {
-					println helloVar.hello()
+					echo helloVar.hello()
 				}
 			}
 			stage('hiwewetj') {
