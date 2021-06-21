@@ -1,7 +1,7 @@
 
 
 def call(){
-
+	abc()
 	pipeline {
 		agent any
 
@@ -25,8 +25,9 @@ def call(){
 	}
 }
 
-return this
-
+def abc(){
+	return 100
+}
 
 
 
