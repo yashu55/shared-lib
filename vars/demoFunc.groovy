@@ -1,6 +1,6 @@
 
 
-def abc(){
+def call(){
 
 	pipeline {
 		agent any
