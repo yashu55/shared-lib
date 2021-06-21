@@ -1,4 +1,7 @@
 
+import com.demo.insideFunc
+
+def helloVar = new insideFunc()
 def call(){
 	pipeline {
 		agent any
@@ -11,7 +14,7 @@ def call(){
 			}
 			stage('dwetwtef') {
 				steps {
-					echo 'Hellodfgdg'
+					println helloVar.hello()
 				}
 			}
 			stage('hiwewetj') {
