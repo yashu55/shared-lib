@@ -1,9 +1,5 @@
 
 def call(){
-	functionDemo()
-}
-
-def functionDemo(){
 	pipeline {
 		agent any
 
@@ -26,6 +22,10 @@ def functionDemo(){
 		}
 	}
 }
+
+// def functionDemo(){
+	
+// }
 
 
 
