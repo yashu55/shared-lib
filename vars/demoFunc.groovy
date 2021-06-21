@@ -4,28 +4,8 @@ def  pqr(){
 }
 
 def  abc(){
-	pipeline {
-		agent any
+	sh "echo hello"
 
-		stages {
-			stage('wtrt') {
-				steps {
-					echo 'Hello dgdfgdfg'
-				}
-			}
-			stage('dwetwtef') {
-				steps {
-					echo 'fgsfgsg'
-				}
-			}
-			stage('hiwewetj') {
-				steps {
-					echo 'Hello'
-				}
-			}
-		}
-	}
-	
 }
 
 
