@@ -3,6 +3,7 @@ import com.demo.insideFunc
 
 def call(){
 	def helloVar = new insideFunc()
+	helloVar.hello()
 	pipeline {
 		agent any
 
@@ -14,9 +15,7 @@ def call(){
 			}
 			stage('dwetwtef') {
 				steps {
-					script{
-					helloVar.hello()
-					}
+					echo 'fggh'
 				}
 			}
 			stage('hiwewetj') {
