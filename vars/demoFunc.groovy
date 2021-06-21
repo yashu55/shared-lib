@@ -1,11 +1,11 @@
 
-
-def call(){
+class demoFunc{
+def  call(){
 	abc()
 	
 }
 
-def abc(){
+def static abc(){
 	pipeline {
 		agent any
 
@@ -27,7 +27,10 @@ def abc(){
 			}
 		}
 	}
+	
 }
+}
+
 
 
 
