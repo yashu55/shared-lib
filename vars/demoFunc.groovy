@@ -1,9 +1,10 @@
-#!/usr/bin/env groovy
 
 def call(){
 
-	insideFunc()
+	def abc = insideFunc()
+	abc.func()
 }
+
 
 
 

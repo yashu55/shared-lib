@@ -1,7 +1,7 @@
 
-def call(){
+def func(){
 
-pipeline {
+	pipeline {
 		agent any
 
 		stages {
