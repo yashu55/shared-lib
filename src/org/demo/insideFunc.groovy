@@ -1,5 +1,7 @@
 
-def func(){
+package org.demo
+
+def functionDemo(){
 
 	pipeline {
 		agent any

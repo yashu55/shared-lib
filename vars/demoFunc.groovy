@@ -1,8 +1,8 @@
 
 def call(){
 
-	def abc = insideFunc()
-	abc.func()
+def myUtils = new org.demo.insideFunc()
+	abc.functionDemo()
 }
 
 
