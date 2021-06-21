@@ -1,11 +1,9 @@
 
-class demoFunc{
-def  call(){
-	abc()
+def  pqr(){
 	
 }
 
-def static abc(){
+def  abc(){
 	pipeline {
 		agent any
 
@@ -29,7 +27,7 @@ def static abc(){
 	}
 	
 }
-}
+
 
 
 
