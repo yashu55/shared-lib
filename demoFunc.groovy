@@ -4,17 +4,17 @@ def call(){
 		agent any
 
 		stages {
-			stage('abc') {
+			stage('wtrt') {
 				steps {
 					echo 'Hello dgdfgdfg'
 				}
 			}
-			stage('def') {
+			stage('dwetwtef') {
 				steps {
 					echo 'Hellodfgdg'
 				}
 			}
-			stage('hij') {
+			stage('hiwewetj') {
 				steps {
 					echo 'Hello'
 				}
