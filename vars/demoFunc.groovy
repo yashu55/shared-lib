@@ -1,4 +1,6 @@
 
+@Library('shared-lib@master') _
+
 def  call(){
 	pipeline {
 		agent any
@@ -6,8 +8,9 @@ def  call(){
 		stages {
 			stage('wtrt') {
 				steps {
-				   
-				      				demoFunc.abc()
+				   script{
+						demoFunc.abc()
+				   }
   
 				  
 				}
