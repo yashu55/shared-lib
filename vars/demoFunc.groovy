@@ -1,8 +1,30 @@
-import org.demo.*
 
 def call(){
-	def myUtils = new org.demo.insideFunc()
-	myUtils.functionDemo()
+	functionDemo()
+}
+
+def functionDemo(){
+	pipeline {
+		agent any
+
+		stages {
+			stage('abc') {
+				steps {
+					echo 'Hello dgdfgdfg'
+				}
+			}
+			stage('def') {
+				steps {
+					echo 'Hellodfgdg'
+				}
+			}
+			stage('hij') {
+				steps {
+					echo 'Hello'
+				}
+			}
+		}
+	}
 }
 
 
