@@ -27,7 +27,7 @@ def  call(){
 			}
 			stage('hiwewetj') {
 				steps {
-					echo params.CHOICE
+					echo "${params.PERSON}"
 				}
 			}
 		}
