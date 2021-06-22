@@ -22,7 +22,7 @@ def  call(){
 			}
 			stage('dwetwtef') {
 				steps {
-					echo params.TOGGLE
+					
 				}
 			}
 			stage('hiwewetj') {
