@@ -1,13 +1,6 @@
 
 def  call(){
-	pipeline {
-		agent any
-		parameters {
-			choice(name: 'CHOICE', choices: ['ANSIBLE', 'TRANSPORTER', 'SCP'], description: 'Pick something')
-    	}
-		environment { 
-        	CHOICE = 'TRANSPORTER'
-    	}
+	
 		stages {
 			stage('ANSIBLE') {
 				when { equals expected: 'ANSIBLE', actual: env.CHOICE }
@@ -28,7 +21,7 @@ def  call(){
 				}
 			}
 		}
-	}
+	
 }
 
 
