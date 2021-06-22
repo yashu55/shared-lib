@@ -1,7 +1,7 @@
 
 def  call(){
 	
-		
+		stages{
 			stage('ANSIBLE') {
 				when { equals expected: 'ANSIBLE', actual: env.CHOICE }
 				steps{
@@ -20,7 +20,7 @@ def  call(){
 					echo "SCP"
 				}
 			}
-		
+		}
 	
 }
 
