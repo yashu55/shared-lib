@@ -22,7 +22,7 @@ def  call(){
 			}
 			stage('dwetwtef') {
 				steps {
-					
+					echo "sdsd"
 				}
 			}
 			stage('hiwewetj') {
