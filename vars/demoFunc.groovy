@@ -17,17 +17,17 @@ def  call(){
 		stages {
 			stage('wtrt') {
 				steps {
-				  echo "sfsdf"
+				  echo params.PERSON
 				}
 			}
 			stage('dwetwtef') {
 				steps {
-					echo 'fgsfgsg'
+					echo params.TOGGLE
 				}
 			}
 			stage('hiwewetj') {
 				steps {
-					echo 'Hello'
+					echo params.CHOICE
 				}
 			}
 		}
