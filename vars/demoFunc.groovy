@@ -4,30 +4,64 @@ def  call(){
 	pipeline {
 		agent any
 		parameters {
-			string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-
-			text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
-
-			booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
-
-			choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
-
-			password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
+			choice(name: 'CHOICE', choices: ['ANSIBLE', 'TRANSPORTER', 'SCP'], description: 'Pick something')
     	}
 		stages {
-			stage('wtrt') {
-				steps {
-				  echo params.PERSON
+			stage('ANSIBLE') {
+				stages{
+					stage("Ansible 1"){
+						steps{
+							echo "A1"
+						}
+					}
+					stage("Ansible 2"){
+						steps{
+							echo "A2"
+						}
+					}
+					stage("Ansible 3"){
+						steps{
+							echo "A3"
+						}
+					}
 				}
 			}
-			stage('dwetwtef') {
-				steps {
-					echo "sdsd"
+			stage('TRANSPORTER') {
+				stages{
+					stage("TRANS 1"){
+						steps{
+							echo "A1"
+						}
+					}
+					stage("TRANS 2"){
+						steps{
+							echo "A2"
+						}
+					}
+					stage("TRANS 3"){
+						steps{
+							echo "A3"
+						}
+					}
 				}
 			}
-			stage('hiwewetj') {
-				steps {
-					echo "${params.CHOICE}"
+			stage('SCP') {
+			stages{
+					stage("SCP 1"){
+						steps{
+							echo "A1"
+						}
+					}
+					stage("SCP 2"){
+						steps{
+							echo "A2"
+						}
+					}
+					stage("SCP 3"){
+						steps{
+							echo "A3"
+						}
+					}
 				}
 			}
 		}
