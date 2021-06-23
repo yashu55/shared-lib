@@ -6,9 +6,9 @@ def  call(){
 	echo "SCP"
 	echo "SCP"
 	echo "SCP"
-	input 'Proceed?'
-
-      
+	// input 'Proceed?'
+	 sh 'java -version'
+     echo env.DEPLOY_ENV 
 		
 }
 
