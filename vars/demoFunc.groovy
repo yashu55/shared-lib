@@ -1,11 +1,21 @@
 
 def  call(){
-		agent any
-		echo "SCP"
-		echo "SCP"
-		echo "SCP"
-		echo "SCP"
-		input 'Proceed?'
+pipeline {
+	agent any
+    stages{
+       stage("bye"){
+          steps{
+				echo "SCP"
+				echo "SCP"
+				echo "SCP"
+				echo "SCP"
+				input 'Proceed?'
+          }
+          
+       }
+    }
+}
+		
 }
 
 
