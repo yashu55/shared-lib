@@ -1,20 +1,17 @@
 
 def  call(
-	String configPath,
-	String ruleSetPath = null,
-	String excludePath = 'none',
-	String[] hosts = null
+	Map m
 
 ){
 
-	if(!ruleSetPath)
+	if(!m.ruleSetPath)
 		{
-			echo ruleSetPath
+			echo m.ruleSetPath
 		}
-	if(excludePath != 'none'){
-		echo "inside if cond ${excludePath}" 
+	if(m.excludePath != 'none'){
+		echo "inside if cond ${m.excludePath}" 
 	}
-	echo configPath
+	echo m.configPath
 
 		
 }
