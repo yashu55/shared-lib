@@ -1,14 +1,20 @@
 
-def  call(){
+def  call(
+	String configPath,
+	String ruleSetPath = null,
+	String excludePath = 'none',
+	String[] hosts = [],
 
-	echo env.config
-	echo "SCP"
-	echo "SCP"
-	echo "SCP"
-	echo "SCP"
-	// input 'Proceed?'
-	 sh 'java -version'
-     echo env.DEPLOY_ENV 
+){
+
+	if(ruleSetPath)
+		{
+			echo ruleSetPath
+		}
+	if(excludePath == 'nome'){
+		echo "inside if cond ${excludePath}" 
+	}
+	echo configPath
 		
 }
 
