@@ -3,7 +3,7 @@ def  call(
 	String configPath,
 	String ruleSetPath = null,
 	String excludePath = 'none',
-	String[] hosts = []
+	String[] hosts = null
 
 ){
 
@@ -11,7 +11,7 @@ def  call(
 		{
 			echo ruleSetPath
 		}
-	if(excludePath == 'nome'){
+	if(excludePath != 'none'){
 		echo "inside if cond ${excludePath}" 
 	}
 	echo configPath
