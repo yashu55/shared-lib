@@ -7,7 +7,7 @@ def  call(
 
 ){
 
-	if(ruleSetPath)
+	if(!ruleSetPath)
 		{
 			echo ruleSetPath
 		}
