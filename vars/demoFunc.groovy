@@ -3,16 +3,24 @@ def  call(Map pipelineParams){
 	pipeline {
 	agent any
 		stages{
+
+			stage("Init"){
+					pipelineParams.type = pipelineParams.type?.trim()
+					pipelineParams.path = "asdfghjhgfdsdfghgfd"
+			}
+
 			stage("Hi") {
 				when{
 					allOf {
 					equals expected: "ANSIBLE", actual: pipelineParams.type
-					expression { !pipelineParams.path?.trim() || pipelineParams.path?.trim() == 'none'}
+					expression { !pipelineParams.path || pipelineParams.path == 'none'}
 					}
 				}
 				steps{      
 					script{
 						echo pipelineParams.type
+						echo pipelineParams.path
+
 					}
 				}
 				
