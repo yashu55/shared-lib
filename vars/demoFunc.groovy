@@ -1,8 +1,7 @@
 
 def  call(Map pipelineParams){
 	node {
-	agent any
-		stages{
+	
 
 			stage("Init"){
 
@@ -32,7 +31,7 @@ def  call(Map pipelineParams){
 				}
 				
 			}	
-		}
+		
 	}
 }
 
