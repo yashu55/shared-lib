@@ -5,8 +5,13 @@ def  call(Map pipelineParams){
 		stages{
 
 			stage("Init"){
+
+				steps{      
+					script{
 					pipelineParams.type = pipelineParams.type?.trim()
 					pipelineParams.path = "asdfghjhgfdsdfghgfd"
+					}
+				}
 			}
 
 			stage("Hi") {
