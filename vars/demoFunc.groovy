@@ -17,7 +17,6 @@ def  call(Map pipelineParams){
 
 			stage("Hi") {
 				
-				agent any
 				echo "sgfg"		
 			}	
 	}
@@ -28,7 +27,6 @@ def  call(Map pipelineParams){
 
 			stage("dfgdg") {
 				
-				agent any
 				echo "Hi"		
 			}	
 	}
