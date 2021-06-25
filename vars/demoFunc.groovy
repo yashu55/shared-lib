@@ -1,6 +1,6 @@
 
 def  call(Map pipelineParams){
-	node {}
+	node {
 	agent any
 		stages{
 
