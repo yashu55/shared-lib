@@ -22,7 +22,9 @@ def  call(Map pipelineParams){
 	}
 	node  {
 			stage("fgdfg"){
-				echo "Hello"
+				withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
+					echo user
+					}
 			}
 
 			stage("dfgdg") {
