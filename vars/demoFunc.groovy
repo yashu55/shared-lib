@@ -1,19 +1,24 @@
 
-def  call(
-	Map m
-
-){
-
-	if(!m.ruleSetPath)
-		{
-			echo m.ruleSetPath
+def  call(Map pipelineParams){
+	pipeline {
+	agent any
+		stages{
+			stage("Hi") {
+				when{
+					allOf {
+					equals expected: "ANSIBLE", actual: pipelineParams.type
+					expression { !pipelineParams.path?.trim() || pipelineParams.path?.trim() == 'none'}
+					}
+				}
+				steps{      
+					script{
+						echo pipelineParams.type
+					}
+				}
+				
+			}	
 		}
-	if(m.excludePath != 'none'){
-		echo "inside if cond ${m.excludePath}" 
 	}
-	echo m.configPath
-
-		
 }
 
 
