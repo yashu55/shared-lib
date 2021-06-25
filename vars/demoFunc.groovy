@@ -15,12 +15,12 @@ def  call(Map pipelineParams){
 			}
 
 			stage("Hi") {
-				when{
-					allOf {
-					equals expected: "ANSIBLE", actual: pipelineParams.type
-					expression { !pipelineParams.path || pipelineParams.path == 'none'}
-					}
-				}
+				// when{
+				// 	allOf {
+				// 	equals expected: "ANSIBLE", actual: pipelineParams.type
+				// 	expression { !pipelineParams.path || pipelineParams.path == 'none'}
+				// 	}
+				// }
 				steps{      
 					script{
 						echo pipelineParams.type
