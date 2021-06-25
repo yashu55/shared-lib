@@ -8,7 +8,7 @@ def  call(Map pipelineParams){
 
 				steps{      
 					script{
-					pipelineParams.type = pipelineParams.type?.trim() : pipelineParams.type?.trim() : 'none'
+					pipelineParams.type = pipelineParams.type?.trim() ? pipelineParams.type?.trim() : 'none'
 					pipelineParams.path = "asdfghjhgfdsdfghgfd"
 					if(null == pipelineParams.type)
 						error("type is null")
