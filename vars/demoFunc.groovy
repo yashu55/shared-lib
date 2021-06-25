@@ -9,8 +9,9 @@ def  call(Map pipelineParams){
 				steps{      
 					script{
 					pipelineParams.type = pipelineParams.type?.trim().toUpperCase()
-					if( pipelineParams.type != 'ANSIBLE' || pipelineParams.type != 'TRANSPORTER' || pipelineParams.type != 'SCP' )
+					if( pipelineParams.type != 'ANSIBLE' && pipelineParams.type != 'TRANSPORTER' && pipelineParams.type != 'SCP' ){
 						error("type is null")
+					}
 					}
 				}
 			}
