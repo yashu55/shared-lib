@@ -1,6 +1,16 @@
 
 def  call(Map pipelineParams){
-	node ("any") {
+	node  {
+		properties([
+        buildDiscarder(
+                logRotator(
+                        artifactDaysToKeepStr: '', 
+                        artifactNumToKeepStr: '', 
+                        daysToKeepStr: '', 
+                        numToKeepStr: '')
+        ), 
+        disableConcurrentBuilds()
+])
 			stage("Init"){
 				echo "Heldfsgdfglo"
 			}
@@ -11,7 +21,7 @@ def  call(Map pipelineParams){
 				echo "sgfg"		
 			}	
 	}
-	node ("any") {
+	node  {
 			stage("fgdfg"){
 				echo "Hello"
 			}
