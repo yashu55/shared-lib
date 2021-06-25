@@ -10,6 +10,8 @@ def  call(Map pipelineParams){
 					script{
 					pipelineParams.type = pipelineParams.type?.trim()
 					pipelineParams.path = "asdfghjhgfdsdfghgfd"
+					if(null == pipelineParams.type)
+						error("type is null")
 					}
 				}
 			}
