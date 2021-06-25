@@ -2,21 +2,17 @@
 def  call(Map pipelineParams){
 	node {
 			stage("Init"){
-				steps{      
-					script{
-						echo "Hello"
-					}
-				}
+				agent any
+				echo "Hello"
+				
 			}
 
 			stage("Hi") {
 				
-				steps{      
-					script{
-						echo "Hi"
+				agent any
+				echo "Hi"
 
-					}
-				}
+				
 				
 			}	
 		
