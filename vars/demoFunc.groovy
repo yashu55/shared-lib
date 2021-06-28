@@ -13,13 +13,13 @@ def  call(Map pipelineParams){
 //         disableConcurrentBuilds()
 // ])
 			stage("Init"){
-			//	node{
+				node{
 					
 					script{
 					echo "Heldfsgdfglo"
 					}
 					
-			//	}
+				}
 			}
 
 			stage("Hi") {
