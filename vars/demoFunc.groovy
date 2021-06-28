@@ -1,6 +1,6 @@
 
 def  call(Map pipelineParams){
-	node  {
+	node('any')  {
 		label any
 		properties([
         buildDiscarder(
@@ -21,8 +21,8 @@ def  call(Map pipelineParams){
 				echo "sgfg"		
 			}	
 	}
-	node  {
-			label any
+	node('any')  {
+			
 			stage("fgdfg"){
 				withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
 					echo user
