@@ -13,7 +13,8 @@ def  call(Map pipelineParams){
         	disableConcurrentBuilds()
 		])
 		echo "SCM Checkout done"
-
+		echo env.NODE_NAME
+		echo env.NODE_LABELS
 
 	}
 	// if(false)
