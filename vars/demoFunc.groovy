@@ -13,13 +13,16 @@ def  call(Map pipelineParams){
 //         disableConcurrentBuilds()
 // ])
 			stage("Init"){
-				node{
+			//	node{
+					steps{
+					script{
 					echo "Heldfsgdfglo"
-				}
+					}
+					}
+			//	}
 			}
 
 			stage("Hi") {
-				agent none
 				echo "sgfg"		
 			}	
 	//}
