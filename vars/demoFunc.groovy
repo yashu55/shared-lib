@@ -1,35 +1,38 @@
 
 def  call(Map pipelineParams){
-// 	node  {
-		
-// 		properties([
-//         buildDiscarder(
-//                 logRotator(
-//                         artifactDaysToKeepStr: '', 
-//                         artifactNumToKeepStr: '', 
-//                         daysToKeepStr: '', 
-//                         numToKeepStr: '')
-//         ), 
-//         disableConcurrentBuilds()
-// ])
+	node  {
+		checkout scm
+		properties([
+        buildDiscarder(
+                logRotator(
+                        artifactDaysToKeepStr: '', 
+                        artifactNumToKeepStr: '', 
+                        daysToKeepStr: '', 
+                        numToKeepStr: '')
+        ), 
+        disableConcurrentBuilds()
+])
 
+
+	}
 	// if(false)
 	// 	println("byeeeeeeeeeee")
 	// else
 	// 	error("errrrorrrrr")
-			stage("Init"){
-				node{
-					script{
-					echo "Heldfsgdfglo"
-					}
+			// stage("Init"){
+			// 	node{
+			// 		checkout scm
+			// 		script{
+			// 		echo "Heldfsgdfglo"
+			// 		}
 					
-				}
-			}
+			// 	}
+			// }
 
-			stage("Hi") {
-				when {equals expected: "Hello", actual: "Hello"}
-				echo "sgfg"		
-			}	
+			// stage("Hi") {
+			// 	when {equals expected: "Hello", actual: "Hello"}
+			// 	echo "sgfg"		
+			// }	
 	//}
 	// node  {
 			
