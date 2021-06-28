@@ -1,6 +1,6 @@
 
 def  call(Map pipelineParams){
-	node('any')  {
+	node  {
 		
 		properties([
         buildDiscarder(
@@ -13,15 +13,16 @@ def  call(Map pipelineParams){
         disableConcurrentBuilds()
 ])
 			stage("Init"){
+				label any
 				echo "Heldfsgdfglo"
 			}
 
 			stage("Hi") {
-				
+				label any
 				echo "sgfg"		
 			}	
 	}
-	node('any')  {
+	node  {
 			
 			stage("fgdfg"){
 				withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
