@@ -14,11 +14,11 @@ def  call(Map pipelineParams){
 // ])
 			stage("Init"){
 			//	node{
-					steps{
+					
 					script{
 					echo "Heldfsgdfglo"
 					}
-					}
+					
 			//	}
 			}
 
