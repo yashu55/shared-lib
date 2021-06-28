@@ -13,10 +13,10 @@ def  call(Map pipelineParams){
 //         disableConcurrentBuilds()
 // ])
 
-	if(false)
-		println("byeeeeeeeeeee")
-	else
-		error("errrrorrrrr")
+	// if(false)
+	// 	println("byeeeeeeeeeee")
+	// else
+	// 	error("errrrorrrrr")
 			stage("Init"){
 				node{
 					script{
