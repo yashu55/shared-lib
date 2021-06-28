@@ -14,8 +14,9 @@ def  call(Map pipelineParams){
 // ])
 
 	if(true)
-		println("Helllo")
-
+		println("byeeeeeeeeeee")
+	else
+		error("errrrorrrrr")
 			stage("Init"){
 				node{
 					script{
