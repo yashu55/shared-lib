@@ -19,7 +19,6 @@ def  call(Map pipelineParams){
 			}
 
 			stage("Hi") {
-				label any
 				echo "sgfg"		
 			}	
 	//}
