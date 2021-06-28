@@ -19,6 +19,7 @@ def  call(Map pipelineParams){
 			}
 
 			stage("Hi") {
+				agent none
 				echo "sgfg"		
 			}	
 	//}
