@@ -1,17 +1,17 @@
 
 def  call(Map pipelineParams){
-	node  {
+// 	node  {
 		
-		properties([
-        buildDiscarder(
-                logRotator(
-                        artifactDaysToKeepStr: '', 
-                        artifactNumToKeepStr: '', 
-                        daysToKeepStr: '', 
-                        numToKeepStr: '')
-        ), 
-        disableConcurrentBuilds()
-])
+// 		properties([
+//         buildDiscarder(
+//                 logRotator(
+//                         artifactDaysToKeepStr: '', 
+//                         artifactNumToKeepStr: '', 
+//                         daysToKeepStr: '', 
+//                         numToKeepStr: '')
+//         ), 
+//         disableConcurrentBuilds()
+// ])
 			stage("Init"){
 				node{
 					echo "Heldfsgdfglo"
@@ -22,20 +22,20 @@ def  call(Map pipelineParams){
 				label any
 				echo "sgfg"		
 			}	
-	}
-	node  {
+	//}
+	// node  {
 			
-			stage("fgdfg"){
-				withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
-					echo user
-					}
-			}
+	// 		stage("fgdfg"){
+	// 			withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
+	// 				echo user
+	// 				}
+	// 		}
 
-			stage("dfgdg") {
+	// 		stage("dfgdg") {
 				
-				echo "Hi"		
-			}	
-	}
+	// 			echo "Hi"		
+	// 		}	
+	// }
 }
 
 
