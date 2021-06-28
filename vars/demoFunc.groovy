@@ -27,6 +27,7 @@ def  call(Map pipelineParams){
 			}
 
 			stage("Hi") {
+				when {equals expected: "Hello", actual: "Hello"}
 				echo "sgfg"		
 			}	
 	//}
