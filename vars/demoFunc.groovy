@@ -1,7 +1,7 @@
 
 def  call(Map pipelineParams){
 	node  {
-		label any
+		
 		properties([
         buildDiscarder(
                 logRotator(
