@@ -11,6 +11,7 @@ def  call(Map pipelineParams){
                         numToKeepStr: '')
         ), 
         disableConcurrentBuilds()
+		echo "SCM Checkout done"
 ])
 
 
