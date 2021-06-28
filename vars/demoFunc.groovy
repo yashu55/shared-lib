@@ -1,4 +1,7 @@
 
+@Library('shared-lib@master') _
+
+
 def  call(Map pipelineParams){
 	node  {
 		properties([
