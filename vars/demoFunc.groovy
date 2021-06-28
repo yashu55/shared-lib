@@ -3,16 +3,16 @@ def  call(Map pipelineParams){
 	node  {
 		checkout scm
 		properties([
-        buildDiscarder(
+        	buildDiscarder(
                 logRotator(
                         artifactDaysToKeepStr: '', 
                         artifactNumToKeepStr: '', 
                         daysToKeepStr: '', 
                         numToKeepStr: '')
-        ), 
-        disableConcurrentBuilds()
+        	), 
+        	disableConcurrentBuilds()
+		])
 		echo "SCM Checkout done"
-])
 
 
 	}
