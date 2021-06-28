@@ -13,8 +13,9 @@ def  call(Map pipelineParams){
         disableConcurrentBuilds()
 ])
 			stage("Init"){
-				label any
-				echo "Heldfsgdfglo"
+				node{
+					echo "Heldfsgdfglo"
+				}
 			}
 
 			stage("Hi") {
