@@ -13,7 +13,7 @@ def  call(Map pipelineParams){
 //         disableConcurrentBuilds()
 // ])
 
-	if(true)
+	if(false)
 		println("byeeeeeeeeeee")
 	else
 		error("errrrorrrrr")
