@@ -1,6 +1,7 @@
 
 def  call(Map pipelineParams){
 	node  {
+		label any
 		properties([
         buildDiscarder(
                 logRotator(
@@ -21,6 +22,7 @@ def  call(Map pipelineParams){
 			}	
 	}
 	node  {
+			label any
 			stage("fgdfg"){
 				withCredentials([usernameColonPassword(credentialsId: 'user_pass', variable: 'user')]) {
 					echo user
