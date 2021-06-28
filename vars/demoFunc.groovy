@@ -12,9 +12,12 @@ def  call(Map pipelineParams){
 //         ), 
 //         disableConcurrentBuilds()
 // ])
+
+	if(true)
+		println("Helllo")
+
 			stage("Init"){
 				node{
-					
 					script{
 					echo "Heldfsgdfglo"
 					}
