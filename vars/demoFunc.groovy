@@ -1,7 +1,6 @@
 
 def  call(Map pipelineParams){
 	node  {
-		checkout scm
 		properties([
         	buildDiscarder(
                 logRotator(
