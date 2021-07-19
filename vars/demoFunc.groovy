@@ -8,7 +8,7 @@ def  call(Map pipelineParams){
 	// sh "chmod 777 script.sh"
     // sh "./script.sh"
 
-	sh "echo I_am_shared_lib"
+	sh "echo ${GIT_URL}"
 }
 
 
