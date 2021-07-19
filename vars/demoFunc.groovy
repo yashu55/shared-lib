@@ -12,6 +12,11 @@ def  call(Map pipelineParams){
 	script{
 	env.test = "YES"
 	}
+
+	withCredentials([string(credentialsId: 'git_user', variable: 'git_user_var'), string(credentialsId: 'git_user', variable: 'git_pass_var')]) {
+		sh "echo ${git_user_var}"
+		sh "echo ${git_pass_var}"
+}
 }
 
 
