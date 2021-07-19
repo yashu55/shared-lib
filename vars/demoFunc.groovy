@@ -9,7 +9,9 @@ def  call(Map pipelineParams){
     // sh "./script.sh"
 
 	sh "echo ${GIT_URL}"
+	script{
 	env.test = "YES"
+	}
 }
 
 
